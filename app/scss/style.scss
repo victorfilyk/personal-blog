@@ -12,14 +12,23 @@
   &__nav {
     display: block;
     position: absolute;
+    @media (min-width: $md1) {
+      top: 0 !important;
+    }
     right: 0;
-    padding: 27px 23px;
+    padding: 27px 60px;
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
     transition: all 0.3s linear;
-    @media (max-width: 450px) {
+    @media (max-width: $md2) {
+      position: static;
       display: flex;
+      justify-content: center;
+    }
+    @media (max-width: $md1) {
+      display: flex;
+      position: absolute;
       flex-direction: column;
       align-items: center;
       top: -500px;
@@ -31,8 +40,11 @@
 
   &__navLink {
     margin-right: 37px;
+    &:last-child {
+      margin-right: 0;
+    }
     color: #000;
-    @media (max-width: 450px) {
+    @media (max-width: $md1) {
       margin-bottom: 70px;
       margin-right: 0;
     }
@@ -42,7 +54,7 @@
   }
 
   &__button {
-    @media (min-width: 450px) {
+    @media (min-width: $md1) {
       display: none;
     }
     display: flex;
