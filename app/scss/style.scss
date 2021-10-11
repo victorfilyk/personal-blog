@@ -81,11 +81,27 @@
     margin-top: 205px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: $md2) {
+      flex-direction: column-reverse;
+      margin-top: 33px;
+    }
+    @media (max-width: $md1) {
+      margin-top: 83px;
+    }
   }
 
   &__description {
     color: $dark-color;
     max-width: 506px;
+    @media (max-width: $md2) {
+      display: block;
+      width: 506px;
+      margin: 0 auto;
+      position: relative;
+    }
+    @media (max-width: $md1) {
+      // margin: 0 auto;
+    }
   }
 
   &__whoAmI {
@@ -93,6 +109,19 @@
     font-size: 44px;
     line-height: 60px;
     margin-top: 20px;
+    max-width: 510px;
+    @media (max-width: $md2) {
+      text-align: center;
+      padding: 0 50px;
+      margin-top: 47px;
+      line-height: 55px;
+    }
+    @media (max-width: $md1) {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+      padding: 0 80px;
+    }
   }
 
   &__descriptionText {
@@ -100,6 +129,16 @@
     font-size: 16px;
     line-height: 23px;
     margin: 35px 0 47px 0;
+    @media (max-width: $md2) {
+      margin: 21px 0 40px 0;
+      text-align: center;
+      max-width: 510px;
+    }
+    @media (max-width: $md1) {
+      // max-width: 330px;
+      text-align: center;
+      padding: 0 25px;
+    }
   }
 
   &__resumeButton {
@@ -112,10 +151,21 @@
     line-height: 29px;
     color: #fff;
     cursor: pointer;
+    @media (max-width: $md2) {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      margin-bottom: 70px;
+    }
   }
 
   &__profilePictureWrapper {
     position: relative;
+    max-width: 250px;
+    @media (max-width: $md2) {
+      left: 50%;
+      transform: translate(-50%);
+    }
   }
 
   &__profilePicture {
@@ -133,5 +183,8 @@
     top: 13px;
     right: 5px;
     z-index: -1;
+    @media (max-width: $md2) {
+      right: 10px;
+    }
   }
 }
