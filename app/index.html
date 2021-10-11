@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="header__inner">
-      <nav class="header__nav" id="header-nav">
-        <a class="header__navLink" href="https://google.com" target="_blank"><span class="header__navLinkText">Works</span></a>
-        <a class="header__navLink" href="https://apple.com" target="_blank"><span class="header__navLinkText">Blog</span></a>
-        <a class="header__navLink" href="https://microsoft.com" target="_blank"><span class="header__navLinkText">Contact</span></a>
-      </nav>
-      <div class="header__button" id="header-button">
-        <span class="header__buttonLine"></span>
-        <span class="header__buttonLine"></span>
-        <span class="header__buttonLine"></span>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <nav class="header__nav" id="header-nav">
+          <a class="header__navLink" href="https://google.com" target="_blank"
+            ><span class="header__navLinkText">Works</span></a
+          >
+          <a class="header__navLink" href="https://apple.com" target="_blank"
+            ><span class="header__navLinkText">Blog</span></a
+          >
+          <a class="header__navLink" href="https://microsoft.com" target="_blank"
+            ><span class="header__navLinkText">Contact</span></a
+          >
+        </nav>
+        <div class="header__button" id="header-button">
+          <span class="header__buttonLine"></span>
+          <span class="header__buttonLine"></span>
+          <span class="header__buttonLine"></span>
+        </div>
       </div>
+    </header>
+
+    <div class="wrapper">
+      <main class="main">
+        <section class="about">
+          <div class="container">
+            <div class="about__inner">
+              <div class="about__description">
+                <h2 class="about__whoAmI">
+                  Hi, I am John, <br />
+                  Creative Technologist
+                </h2>
+                <p class="about__descriptionText">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                  officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                  nostrud amet.
+                </p>
+                <a class="about__resumeButton" href="#">Download Resume</a>
+              </div>
+              <div class="about__profilePictureWrapper">
+                <img
+                  class="about__profilePicture"
+                  src="./images/profile-picture.png"
+                  alt="profilePicture"
+                />
+                <span class="about__profilePictureOutline"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer"></footer>
     </div>
-  </header>
 
-  <div class="wrapper">
-    <main class="main"></main>
-    <footer class="footer"></footer>
-  </div>
-
-
-
-  <script src="js/main.min.js"></script>
-</body>
-
+    <script src="js/main.min.js"></script>
+  </body>
 </html>

@@ -75,3 +75,63 @@
     }
   }
 }
+
+.about {
+  &__inner {
+    margin-top: 205px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    color: $dark-color;
+    max-width: 506px;
+  }
+
+  &__whoAmI {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 60px;
+    margin-top: 20px;
+  }
+
+  &__descriptionText {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 35px 0 47px 0;
+  }
+
+  &__resumeButton {
+    padding: 9px 21px 9px 20px;
+    background: $primary-color;
+    border: none;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &__profilePictureWrapper {
+    position: relative;
+  }
+
+  &__profilePicture {
+    width: 243px;
+    height: 243px;
+  }
+
+  &__profilePictureOutline {
+    display: inline-block;
+    width: 243px;
+    height: 243px;
+    background: $grey-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    z-index: -1;
+  }
+}
