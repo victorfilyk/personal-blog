@@ -99,12 +99,7 @@
       max-width: 506px;
     }
     @media (max-width: $md2) {
-      display: block;
-      margin: 0 auto;
-      position: relative;
-    }
-    @media (max-width: $md1) {
-      position: static;
+      text-align: center;
     }
   }
 
@@ -132,7 +127,7 @@
     line-height: 23px;
     margin: 35px 0 47px 0;
     @media (max-width: $md2) {
-      margin: 21px 0 40px 0;
+      margin: 21px 0 27px 0;
       text-align: center;
       padding: 0 30px;
     }
@@ -152,12 +147,9 @@
     color: #fff;
     cursor: pointer;
     text-align: center;
-    min-width: 208px;
+    display: inline-block;
     @media (max-width: $md2) {
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%);
-      margin-bottom: 70px;
+      margin-bottom: 58px;
     }
   }
 
