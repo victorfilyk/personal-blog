@@ -45,7 +45,7 @@
             <div class="about__inner">
               <div class="about__description">
                 <h2 class="about__whoAmI">
-                  Hi, I am John, <br>
+                  Hi, I am John, <br />
                   Creative Technologist
                 </h2>
                 <p class="about__descriptionText">
@@ -94,7 +94,9 @@
                   </p>
                 </div>
                 <div class="recentPosts__post">
-                  <a class="recentPosts__postTitle" href="#">Creating pixel perfect icons in Figma</a>
+                  <a class="recentPosts__postTitle" href="#"
+                    >Creating pixel perfect icons in Figma</a
+                  >
                   <div class="recentPosts__postMeta">
                     <span class="recentPosts__postDate">12 Feb 2020</span>
                     <span class="recentPosts__postMetaDivider"></span>
@@ -113,9 +115,53 @@
             </div>
           </div>
         </section>
+
+        <section class="works">
+          <div class="container">
+            <div class="works__inner">
+              <h5 class="works__title">Featured works</h5>
+              <div class="works__container">
+                <div class="works__workBlock">
+                  <img class="works__workImage" src="./images/works/work-1.png" alt="work-image" />
+                  <div class="works__workDescription">
+                    <a class="works__workTitle" href="#">Designing Dashboards</a>
+                    <div class="works__workMeta">
+                      <span class="works__workYearBadge">2020</span>
+                      <span class="works__workTag">Dashboard</span>
+                    </div>
+                    <p class="works__workText">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                      Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                      sunt nostrud amet.
+                    </p>
+                  </div>
+                </div>
+                <span class="works__workDivider"></span>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__social">
+            <a class="footer__socialLink" href="#"
+              ><img class="footer__socialLogo" src="./images/icons/facebook.svg" alt="social-logo"
+            /></a>
+            <a class="footer__socialLink" href="#"
+              ><img class="footer__socialLogo" src="./images/icons/instagram.svg" alt="social-logo"
+            /></a>
+            <a class="footer__socialLink" href="#"
+              ><img class="footer__socialLogo" src="./images/icons/twitter.svg" alt="social-logo"
+            /></a>
+            <a class="footer__socialLink" href="#"
+              ><img class="footer__socialLogo" src="./images/icons/linkedin.svg" alt="social-logo"
+            /></a>
+          </div>
+          <span class="footer__copyright">Copyright ©2020 All rights reserved </span>
+        </div>
+      </footer>
     </div>
 
     <script src="js/main.min.js"></script>
