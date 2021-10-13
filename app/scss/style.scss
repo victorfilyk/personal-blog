@@ -101,6 +101,7 @@
     @media (max-width: $md2) {
       flex-direction: column-reverse;
       margin-top: 33px;
+      align-items: center;
     }
     @media (max-width: $md1) {
       margin-top: 83px;
@@ -170,32 +171,15 @@
     }
   }
 
-  &__profilePictureWrapper {
-    position: relative;
-    max-width: 250px;
-    @media (max-width: $md2) {
-      left: 50%;
-      transform: translate(-50%);
-    }
-  }
-
   &__profilePicture {
-    width: 243px;
-    height: 243px;
-  }
-
-  &__profilePictureOutline {
-    display: inline-block;
-    width: 243px;
-    height: 243px;
-    background: $grey-color;
+    box-shadow: -7px 13px 0px $grey-color;
     border-radius: 50%;
-    position: absolute;
-    top: 13px;
-    right: 5px;
-    z-index: -1;
-    @media (max-width: $md2) {
-      right: 10px;
+    max-width: 243px;
+    max-height: 243px;
+    min-width: 180px;
+    min-height: 180px;
+    @media (max-width: $md1) {
+      width: 50%;
     }
   }
 }
@@ -346,9 +330,6 @@
     text-align: center;
   }
 
-  &__container {
-  }
-
   &__workBlock {
     margin: 0 auto;
   }
@@ -424,9 +405,6 @@
     &:last-child {
       margin-right: 0;
     }
-  }
-
-  &__socialLogo {
   }
 
   &__copyright {
