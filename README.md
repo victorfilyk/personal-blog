@@ -6,7 +6,7 @@
 - SCSS
 
 
-HTML written using [BEM methodology](https://en.bem.info/methodology/)  
+HTML/CSS written using [BEM methodology](https://en.bem.info/methodology/)  
 Deployed via [Netlify](https://www.netlify.com/)
 
 
